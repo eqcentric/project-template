@@ -1,0 +1,13 @@
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+@import "vue3-simple-typeahead/dist/vue3-simple-typeahead.css";
+
+//div#{:id}_wrapper.simple-typeahead
+input.simple-typeahead-input {
+  @extend .form-control
+}
+//div.simple-typeahead-list
+//.simple-typeahead-list-header
+//.simple-typeahead-list-item &.simple-typeahead-list-item-active
+//.simple-typeahead-list-item-text
+//.simple-typeahead-list-footer
