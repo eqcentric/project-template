@@ -1,7 +1,7 @@
 export default defineAppConfig({
     makiniApiUrl: 'https://api.makini.io',
     // REPLACE
-    clientId: '<clientId>',
+    clientId: '<placeholder-clientId>',
     // REPLACE
-    redirectUri: '<recirectUri>',
+    redirectUri: '<placeholder-recirectUri>',
 })

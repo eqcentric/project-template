@@ -13,6 +13,13 @@
               :to="`/connections/${connection.id}`">
             Assets
           </nuxt-link>
+          <nuxt-link
+              class="nav-link"
+              :class="{ active: route.name === 'connections-connection-statuses' }"
+              aria-current="page"
+              :to="`/connections/${connection.id}/statuses`">
+            Assets
+          </nuxt-link>
         </li>
       </ul>
 
@@ -24,7 +31,7 @@
 <script setup>
 const route = useRoute()
 definePageMeta({
-  middleware: ['auth']
+  // middleware: ['auth']
 })
 const { data: connection } = await useAsyncData('connection', () => {
   return $fetch('/api/connections/'+route.params['connection'])
